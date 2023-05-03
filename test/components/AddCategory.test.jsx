@@ -38,8 +38,8 @@ describe('Pruebas en AddCategory', () => {
         const form = screen.getByRole('form');
         fireEvent.submit(form);
   
+        // screen.debug()
         expect(onNewCategory).not.toHaveBeenCalled();
-        screen.debug()
       })
     
 
